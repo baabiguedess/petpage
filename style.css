@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root{
+    --branco-principal: #4F1787;
+    --cor-de-fundo: #EBD2B6;
+    --cor-texto: #FB773C;
+    --cor-atencao: #EB3678;
+    --cor-amarelo: #EBB900;
+    --cor-preta: #180161;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+nav{
+    background-color: var(--cor-texto);
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a{
+    text-decoration: none;
+    color:  var(--cor-atencao);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: var(--cor-amarelo);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    background-color: var(--branco-principal);
+    color: var(--cor-preta);
+}
+
+
+.banner{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.texto .titulo{
+    color: var(--branco-principal);
+    font-size: 60px;
+    font-weight: 600;
+}
+.texto .sub_titulo{
+    color: var(--cor-atencao);
+    font-size: 30px;
+    font-weight: 600;
+}
+.texto .botoes{
+    margin-top: 30px;
+    color: var(--branco-principal);
+    
+}
+
+nav .voltar{
+    background-color: var(--cor-texto);
+    padding: 10px 10px;
+   
+}
+
+nav .voltar a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.container{
+    padding: 5% 15%;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.descricao__texto{
+    font-size: 15px;
+}
+
+.container-imagem{ 
+    height: 500px;
+    width: auto;
+}
+.descricao__titulo {
+    color: var(--cor-atencao);
+}
+.descricao__texto {
+    color: var(--cor-texto);
+}
+
+
+@media (max-width: 691px) {
+   .menu-desktop {
+       padding: 10%;
+       justify-content: center;
+       flex-direction: column;
+       width: auto;
+   }
+}
